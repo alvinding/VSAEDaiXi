@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E126C75F1BAA570B0078FD4A /* VSALoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = E126C75D1BAA570B0078FD4A /* VSALoginController.m */; };
+		E126C7601BAA570B0078FD4A /* VSALoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E126C75E1BAA570B0078FD4A /* VSALoginController.xib */; };
+		E126C7651BAA5EA80078FD4A /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = E126C7641BAA5EA80078FD4A /* UIView+Extension.m */; };
+		E126C76C1BAA6A750078FD4A /* VSAMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = E126C76B1BAA6A750078FD4A /* VSAMainController.m */; };
+		E126C76F1BAA6BF60078FD4A /* VSAMainTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E126C76E1BAA6BF60078FD4A /* VSAMainTabBar.m */; };
 		E1E4AA5A1BAA55B800924EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AA591BAA55B800924EE8 /* main.m */; };
 		E1E4AA5D1BAA55B800924EE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AA5C1BAA55B800924EE8 /* AppDelegate.m */; };
 		E1E4AA601BAA55B900924EE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AA5F1BAA55B900924EE8 /* ViewController.m */; };
@@ -27,6 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E126C75C1BAA570B0078FD4A /* VSALoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSALoginController.h; sourceTree = "<group>"; };
+		E126C75D1BAA570B0078FD4A /* VSALoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSALoginController.m; sourceTree = "<group>"; };
+		E126C75E1BAA570B0078FD4A /* VSALoginController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSALoginController.xib; sourceTree = "<group>"; };
+		E126C7631BAA5EA80078FD4A /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		E126C7641BAA5EA80078FD4A /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		E126C7661BAA5EC60078FD4A /* VSAEDai.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSAEDai.pch; sourceTree = "<group>"; };
+		E126C76A1BAA6A750078FD4A /* VSAMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAMainController.h; sourceTree = "<group>"; };
+		E126C76B1BAA6A750078FD4A /* VSAMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAMainController.m; sourceTree = "<group>"; };
+		E126C76D1BAA6BF60078FD4A /* VSAMainTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAMainTabBar.h; sourceTree = "<group>"; };
+		E126C76E1BAA6BF60078FD4A /* VSAMainTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAMainTabBar.m; sourceTree = "<group>"; };
 		E1E4AA541BAA55B800924EE8 /* VSAEDai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSAEDai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1E4AA581BAA55B800924EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1E4AA591BAA55B800924EE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +75,116 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E126C7581BAA56BB0078FD4A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E126C7591BAA56BB0078FD4A /* Controller */,
+				E126C75A1BAA56BB0078FD4A /* Model */,
+				E126C75B1BAA56BB0078FD4A /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E126C7591BAA56BB0078FD4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E126C75C1BAA570B0078FD4A /* VSALoginController.h */,
+				E126C75D1BAA570B0078FD4A /* VSALoginController.m */,
+				E126C75E1BAA570B0078FD4A /* VSALoginController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E126C75A1BAA56BB0078FD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E126C75B1BAA56BB0078FD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E126C7611BAA5E9D0078FD4A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E126C7671BAA68F00078FD4A /* Controller */,
+				E126C7681BAA68F00078FD4A /* Model */,
+				E126C7691BAA68F00078FD4A /* View */,
+				E126C7621BAA5E9D0078FD4A /* Category */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		E126C7621BAA5E9D0078FD4A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E126C7631BAA5EA80078FD4A /* UIView+Extension.h */,
+				E126C7641BAA5EA80078FD4A /* UIView+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E126C7671BAA68F00078FD4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E126C76A1BAA6A750078FD4A /* VSAMainController.h */,
+				E126C76B1BAA6A750078FD4A /* VSAMainController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E126C7681BAA68F00078FD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E126C7691BAA68F00078FD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E126C76D1BAA6BF60078FD4A /* VSAMainTabBar.h */,
+				E126C76E1BAA6BF60078FD4A /* VSAMainTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E126C7701BAA74C90078FD4A /* Wash */ = {
+			isa = PBXGroup;
+			children = (
+				E126C7711BAA74C90078FD4A /* Controller */,
+				E126C7721BAA74C90078FD4A /* Model */,
+				E126C7731BAA74C90078FD4A /* View */,
+			);
+			path = Wash;
+			sourceTree = "<group>";
+		};
+		E126C7711BAA74C90078FD4A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E126C7721BAA74C90078FD4A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E126C7731BAA74C90078FD4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E1E4AA4B1BAA55B800924EE8 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +206,9 @@
 		E1E4AA561BAA55B800924EE8 /* VSAEDai */ = {
 			isa = PBXGroup;
 			children = (
+				E126C7701BAA74C90078FD4A /* Wash */,
+				E126C7611BAA5E9D0078FD4A /* Main */,
+				E126C7581BAA56BB0078FD4A /* Login */,
 				E1E4AA5B1BAA55B800924EE8 /* AppDelegate.h */,
 				E1E4AA5C1BAA55B800924EE8 /* AppDelegate.m */,
 				E1E4AA5E1BAA55B900924EE8 /* ViewController.h */,
@@ -98,6 +226,7 @@
 			children = (
 				E1E4AA581BAA55B800924EE8 /* Info.plist */,
 				E1E4AA591BAA55B800924EE8 /* main.m */,
+				E126C7661BAA5EC60078FD4A /* VSAEDai.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -201,6 +330,7 @@
 			files = (
 				E1E4AA631BAA55B900924EE8 /* Main.storyboard in Resources */,
 				E1E4AA681BAA55B900924EE8 /* LaunchScreen.xib in Resources */,
+				E126C7601BAA570B0078FD4A /* VSALoginController.xib in Resources */,
 				E1E4AA651BAA55B900924EE8 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +349,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E126C7651BAA5EA80078FD4A /* UIView+Extension.m in Sources */,
+				E126C76C1BAA6A750078FD4A /* VSAMainController.m in Sources */,
+				E126C76F1BAA6BF60078FD4A /* VSAMainTabBar.m in Sources */,
 				E1E4AA601BAA55B900924EE8 /* ViewController.m in Sources */,
 				E1E4AA5D1BAA55B800924EE8 /* AppDelegate.m in Sources */,
+				E126C75F1BAA570B0078FD4A /* VSALoginController.m in Sources */,
 				E1E4AA5A1BAA55B800924EE8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /xcodeFile/test/VSAEDai/VSAEDai/VSAEDai.pch;
 				INFOPLIST_FILE = VSAEDai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /xcodeFile/test/VSAEDai/VSAEDai/VSAEDai.pch;
 				INFOPLIST_FILE = VSAEDai/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +552,7 @@
 				E1E4AA791BAA55B900924EE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E1E4AA7A1BAA55B900924EE8 /* Build configuration list for PBXNativeTarget "VSAEDaiTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +561,7 @@
 				E1E4AA7C1BAA55B900924EE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

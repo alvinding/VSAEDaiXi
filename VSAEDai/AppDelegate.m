@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "VSALoginController.h"
+#import "VSAMainController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] init];
+    self.window.frame = [UIScreen mainScreen].bounds;
+    
+//    VSALoginController *loginVC = [[VSALoginController alloc] init];
+    VSAMainController *mainVC = [[VSAMainController alloc] init];
+    [self.window setRootViewController:mainVC];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
