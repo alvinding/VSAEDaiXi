@@ -1,5 +1,5 @@
 //
-//  VSAMainController.h
+//  VSAWashCell.h
 //  VSAEDai
 //
 //  Created by alvin on 15/9/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VSAMainController : UIViewController
-
+@interface VSAWashCell : UICollectionViewCell
+@property (strong, nonatomic) IBOutlet UILabel *title;
 @end

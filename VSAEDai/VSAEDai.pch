@@ -12,5 +12,21 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 #import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
+
+#pragma mark - 通知
+#define VSANotificationCenter [NSNotificationCenter defaultCenter]
+#define VSAMainTabBarHideNotification @"VSAMainTabBarHideNotification"
+#define VSAMainTabBarShowNotification @"VSAMainTabBarShowNotification"
+
+#ifdef DEBUG
+#define VSALog(...) NSLog(__VA_ARGS__)
+#else
+#define VSALog(...)
+#endif
+
+#pragma mark - 颜色
+#define VSAMainBlueColor [UIColor colorWithRed:61/255.0 green:150/255.0 blue:220/255.0 alpha:1.0]
+#define VSAMainBackgroundColor [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1.0]
 
 #endif

@@ -8,6 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VSAMainTabBar : UIView
+typedef NS_ENUM(NSUInteger, VSAMainTabBarButtonType) {
+    VSAMainTabBarButtonTypeWash,
+    VSAMainTabBarButtonTypeOrder,
+    VSAMainTabBarButtonTypeMine
+};
 
+@class VSAMainTabBar;
+@protocol VSAMainTabBarDelegate <NSObject>
+
+@optional
+- (void)changeViewControllerFrom:(VSAMainTabBarButtonType)fromType to:(VSAMainTabBarButtonType)toType;
+
+@end
+
+@interface VSAMainTabBar : UIView
+@property (nonatomic, weak) id<VSAMainTabBarDelegate> delegate;
 @end

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "VSALoginController.h"
 #import "VSAMainController.h"
+#import "WashController.h"
 
 @interface AppDelegate ()
 
@@ -24,9 +25,12 @@
     
 //    VSALoginController *loginVC = [[VSALoginController alloc] init];
     VSAMainController *mainVC = [[VSAMainController alloc] init];
+//    WashController *washVC = [[WashController alloc] init];
     [self.window setRootViewController:mainVC];
     [self.window makeKeyAndVisible];
-    
+
+    [[UINavigationBar appearance] setBarTintColor:VSAMainBlueColor];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     return YES;
 }
 

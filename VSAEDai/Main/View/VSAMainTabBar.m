@@ -19,18 +19,19 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     if (self = [super initWithFrame:frame]) {
         //添加三个button
-        [self addBarItemWithImage:@"wash_default_icon" selectedImage:@"wash_press_icon"];
-        [self addBarItemWithImage:@"order_default_icon" selectedImage:@"order_press_icon"];
-        [self addBarItemWithImage:@"my_default_icon" selectedImage:@"my_press_icon"];
+        [self addBarItemWithImage:@"wash_default_icon" selectedImage:@"wash_press_icon" type:VSAMainTabBarButtonTypeWash];
+        [self addBarItemWithImage:@"order_default_icon" selectedImage:@"order_press_icon" type:VSAMainTabBarButtonTypeOrder];
+        [self addBarItemWithImage:@"my_default_icon" selectedImage:@"my_press_icon" type:VSAMainTabBarButtonTypeMine];
     }
     
     return self;
 }
 
-- (void)addBarItemWithImage:(NSString *)image selectedImage:(NSString *)selectedImage {
+- (void)addBarItemWithImage:(NSString *)image selectedImage:(NSString *)selectedImage type:(VSAMainTabBarButtonType)type {
     UIButton *btn = [[UIButton alloc] init];
     [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     [btn setImage:[UIImage imageNamed:selectedImage] forState:UIControlStateSelected];
+    [btn setTag:type];
     [self addSubview:btn];
     
     [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -71,6 +72,11 @@
             break;
         default:
             break;
+    }
+    
+    //代理方法
+    if ([self.delegate respondsToSelector:@selector(changeViewControllerFrom:to:)]) {
+        [self.delegate changeViewControllerFrom:self.selectedBtn.tag to:btn.tag];
     }
     
     self.selectedBtn = btn;

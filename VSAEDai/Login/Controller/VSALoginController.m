@@ -40,6 +40,9 @@
 }
 
 #pragma mark - 监听事件
+- (IBAction)closeClicked {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (IBAction)coverBtnClicked {
     [self.view endEditing:YES];

@@ -1,5 +1,5 @@
 //
-//  VSAMainController.h
+//  WashOrderController.h
 //  VSAEDai
 //
 //  Created by alvin on 15/9/17.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VSAMainController : UIViewController
+@interface WashOrderController : UIViewController
 
 @end
