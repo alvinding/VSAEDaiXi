@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0EC96DF4ED7E1FE62BADE9B36B15E7537620627C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0EC96DF4ED7E1FE62BADE9B36B15E7537620627C" : 0,
+    "B0B9236427801CEA9D8CFEAE79C3972EA92BAC6C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "85C3365A-893B-4ADE-A369-C7D05DDAD812",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0EC96DF4ED7E1FE62BADE9B36B15E7537620627C" : "VSAEDai\/",
+    "B0B9236427801CEA9D8CFEAE79C3972EA92BAC6C" : "VSAWebo_%E5%BE%AE%E5%8D%9A0913_%E6%B5%8B%E8%AF%95MBProgressHUD\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VSAEDai",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VSAEDai.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alvinding\/VSAEDaiXi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0EC96DF4ED7E1FE62BADE9B36B15E7537620627C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/alvinding\/VSAWeibo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B0B9236427801CEA9D8CFEAE79C3972EA92BAC6C"
+    }
+  ]
+}

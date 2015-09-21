@@ -11,10 +11,14 @@
 #import "VSAMineCellModel.h"
 #import "VSAAddressListController.h"
 #import "VSALoginController.h"
+#import "VSAShareView.h"
 
-@interface VSAMineController () <UITableViewDataSource, UITableViewDelegate>
+@interface VSAMineController () <UITableViewDataSource, UITableViewDelegate, VSAShareViewDelegate>
 @property (nonatomic, weak) NSArray *cellModels;
 @property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UIButton *shareViewBtn;
+@property (nonatomic, weak) UIView *shareView;
+@property (nonatomic, strong) UIView *mainView;
 @end
 
 @implementation VSAMineController
@@ -182,6 +186,34 @@
                     [self.navigationController pushViewController:addressListVC animated:YES];
                     break;
                 }
+                case 3: {
+                    //获取最上面的window
+                    UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+                    
+                    //获取要缩放的view
+                    UIView *mainView = self.navigationController.view.superview;
+                    self.mainView = mainView;
+                    [UIView animateWithDuration:0.25 animations:^{
+                        mainView.transform = CGAffineTransformScale(mainView.transform, 0.9, 0.9);
+                    }];
+                    
+                    //添加透明的button
+                    UIButton *shareViewBtn = [[UIButton alloc] init];
+                    shareViewBtn.frame = self.view.bounds;
+                    shareViewBtn.backgroundColor = [UIColor blackColor];
+                    shareViewBtn.alpha = 0.7;
+                    [window addSubview:shareViewBtn];
+                    self.shareViewBtn = shareViewBtn;
+                    [shareViewBtn addTarget:self action:@selector(shareViewBtnClick) forControlEvents:UIControlEventTouchUpInside];
+                    
+                    //添加分享菜单view
+                    VSAShareView *shareView = [[[NSBundle mainBundle] loadNibNamed:@"VSAShareView" owner:self options:nil] lastObject];
+                    shareView.delegate = self;
+                    shareView.y = self.view.height - shareView.height;
+                    self.shareView = shareView;
+                    [window addSubview:shareView];
+                    break;
+                }
                 default:
                     break;
             }
@@ -191,6 +223,24 @@
             break;
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - VSAShareViewDelegate
+- (void)shareViewDidRemove:(VSAShareView *)shareView {
+    [shareView removeFromSuperview];
+    [self.shareViewBtn removeFromSuperview];
+    [UIView animateWithDuration:0.25 animations:^{
+        self.mainView.transform = CGAffineTransformIdentity;
+    }];
+}
+
+#pragma mark - others
+- (void)shareViewBtnClick {
+    [self.shareViewBtn removeFromSuperview];
+    [self.shareView removeFromSuperview];
+    [UIView animateWithDuration:0.25 animations:^{
+        self.mainView.transform = CGAffineTransformIdentity;
+    }];
 }
 
 /*

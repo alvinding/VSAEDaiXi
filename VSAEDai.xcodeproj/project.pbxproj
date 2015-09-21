@@ -35,6 +35,8 @@
 		E1380B591BABE9F700355860 /* VSALocationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E1380B581BABE9F700355860 /* VSALocationTool.m */; settings = {ASSET_TAGS = (); }; };
 		E1380B6A1BAC147B00355860 /* VSALocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E1380B691BAC147B00355860 /* VSALocation.m */; settings = {ASSET_TAGS = (); }; };
 		E1380B6D1BAC193300355860 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1380B6C1BAC193300355860 /* TestModel.m */; settings = {ASSET_TAGS = (); }; };
+		E15927DB1BB03F06004D3147 /* VSAShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15927DA1BB03F06004D3147 /* VSAShareView.xib */; settings = {ASSET_TAGS = (); }; };
+		E15927DE1BB03F21004D3147 /* VSAShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = E15927DD1BB03F21004D3147 /* VSAShareView.m */; settings = {ASSET_TAGS = (); }; };
 		E179F2841BAC2C8E005ED64E /* VSAEditLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E179F2831BAC2C8E005ED64E /* VSAEditLocationController.m */; settings = {ASSET_TAGS = (); }; };
 		E179F2891BAC305F005ED64E /* VSALocationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E179F2881BAC305F005ED64E /* VSALocationListController.m */; settings = {ASSET_TAGS = (); }; };
 		E1E4AA5A1BAA55B800924EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AA591BAA55B800924EE8 /* main.m */; };
@@ -116,6 +118,9 @@
 		E1380B691BAC147B00355860 /* VSALocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSALocation.m; sourceTree = "<group>"; };
 		E1380B6B1BAC193300355860 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		E1380B6C1BAC193300355860 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		E15927DA1BB03F06004D3147 /* VSAShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSAShareView.xib; sourceTree = "<group>"; };
+		E15927DC1BB03F21004D3147 /* VSAShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAShareView.h; sourceTree = "<group>"; };
+		E15927DD1BB03F21004D3147 /* VSAShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAShareView.m; sourceTree = "<group>"; };
 		E179F2821BAC2C8E005ED64E /* VSAEditLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEditLocationController.h; sourceTree = "<group>"; };
 		E179F2831BAC2C8E005ED64E /* VSAEditLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEditLocationController.m; sourceTree = "<group>"; };
 		E179F2871BAC305F005ED64E /* VSALocationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSALocationListController.h; sourceTree = "<group>"; };
@@ -440,6 +445,9 @@
 		E1F862D61BAB9DB400D418B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E15927DA1BB03F06004D3147 /* VSAShareView.xib */,
+				E15927DC1BB03F21004D3147 /* VSAShareView.h */,
+				E15927DD1BB03F21004D3147 /* VSAShareView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -558,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1E4AA631BAA55B900924EE8 /* Main.storyboard in Resources */,
+				E15927DB1BB03F06004D3147 /* VSAShareView.xib in Resources */,
 				E1F195BE1BAD1BD300F071ED /* AboutMe.plist in Resources */,
 				E126C77B1BAA7E8D0078FD4A /* VSAWashCell.xib in Resources */,
 				E1E4AA681BAA55B900924EE8 /* LaunchScreen.xib in Resources */,
@@ -594,6 +603,7 @@
 				E1E4AA601BAA55B900924EE8 /* ViewController.m in Sources */,
 				E1E4AA5D1BAA55B800924EE8 /* AppDelegate.m in Sources */,
 				E126C75F1BAA570B0078FD4A /* VSALoginController.m in Sources */,
+				E15927DE1BB03F21004D3147 /* VSAShareView.m in Sources */,
 				E126C7811BAAB68E0078FD4A /* VSANavigationController.m in Sources */,
 				E1380B4C1BABE7F100355860 /* MJExtensionConst.m in Sources */,
 				E1F862D91BAB9DD400D418B1 /* VSAMineController.m in Sources */,
