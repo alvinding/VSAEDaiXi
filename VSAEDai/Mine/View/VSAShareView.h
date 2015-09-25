@@ -12,7 +12,8 @@
 
 @optional
 - (void)shareViewDidRemove:(VSAShareView *)shareView;
-
+- (void)shareToSession;
+- (void)shareToTimeline;
 @end
 
 @interface VSAShareView : UIView

@@ -26,5 +26,16 @@
         [self.delegate shareViewDidRemove:self];
     }
 }
+- (IBAction)shareToSession:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(shareToSession)]) {
+        [self.delegate shareToSession];
+    }
+}
+- (IBAction)shareToTimeline:(id)sender {
+    if ([self.delegate respondsToSelector:@selector(shareToTimeline)]) {
+        [self.delegate shareToTimeline];
+    }
+}
+
 
 @end

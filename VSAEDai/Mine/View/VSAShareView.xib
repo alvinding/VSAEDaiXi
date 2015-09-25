@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -11,42 +12,67 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分享给好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-l5-Lot">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享给好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QM-l5-Lot">
                     <rect key="frame" x="145" y="24" width="85" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-6w-pab">
-                    <rect key="frame" x="99" y="70" width="57" height="57"/>
-                    <state key="normal" image="mine_friend"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qej-m6-LA5">
-                    <rect key="frame" x="219" y="70" width="57" height="57"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qej-m6-LA5" userLabel="朋友圈">
+                    <rect key="frame" x="221" y="75" width="57" height="57"/>
                     <state key="normal" image="mine_friends"/>
+                    <connections>
+                        <action selector="shareToTimeline:" destination="iN0-l3-epB" eventType="touchUpInside" id="7ZB-Un-xKz"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-QA-x5k">
-                    <rect key="frame" x="93" y="140" width="68" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnX-QA-x5k">
+                    <rect key="frame" x="97" y="140" width="60" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Is-ze-4MV">
-                    <rect key="frame" x="222" y="140" width="51" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Is-ze-4MV">
+                    <rect key="frame" x="227" y="140" width="45" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-CO-nmq">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfb-CO-nmq">
                     <rect key="frame" x="0.0" y="180" width="375" height="40"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LTa-cj-24w"/>
+                    </constraints>
                     <state key="normal" title="取消"/>
                     <connections>
                         <action selector="cancelClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="bg8-q6-9xH"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kte-6w-pab" userLabel="好友">
+                    <rect key="frame" x="98" y="75" width="57" height="57"/>
+                    <state key="normal" image="mine_friend"/>
+                    <connections>
+                        <action selector="shareToSession:" destination="iN0-l3-epB" eventType="touchUpInside" id="P0d-u0-UK8"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="gfb-CO-nmq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5lP-f6-60i"/>
+                <constraint firstItem="Kte-6w-pab" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-6" id="79K-J9-mhB"/>
+                <constraint firstAttribute="trailing" secondItem="gfb-CO-nmq" secondAttribute="trailing" id="DaF-VY-gia"/>
+                <constraint firstItem="Qej-m6-LA5" firstAttribute="bottom" secondItem="Kte-6w-pab" secondAttribute="bottom" id="Dkp-Cz-UEh"/>
+                <constraint firstItem="Qej-m6-LA5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="33" id="FGP-5r-82L"/>
+                <constraint firstItem="Qej-m6-LA5" firstAttribute="top" secondItem="Kte-6w-pab" secondAttribute="top" id="KKp-UM-Vol"/>
+                <constraint firstItem="Kte-6w-pab" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-33" id="Mf6-CD-gh9"/>
+                <constraint firstItem="0Is-ze-4MV" firstAttribute="top" secondItem="Qej-m6-LA5" secondAttribute="bottom" constant="8" id="OY3-KT-PHy"/>
+                <constraint firstItem="lnX-QA-x5k" firstAttribute="top" secondItem="Kte-6w-pab" secondAttribute="bottom" constant="8" id="R1v-pB-UZs"/>
+                <constraint firstItem="lnX-QA-x5k" firstAttribute="centerX" secondItem="Kte-6w-pab" secondAttribute="centerX" id="Te7-66-1sB"/>
+                <constraint firstItem="7QM-l5-Lot" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="UOE-pW-8ga"/>
+                <constraint firstItem="7QM-l5-Lot" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-75" id="i0T-md-HrN"/>
+                <constraint firstItem="Qej-m6-LA5" firstAttribute="centerX" secondItem="0Is-ze-4MV" secondAttribute="centerX" id="obH-6L-LtA"/>
+                <constraint firstAttribute="bottom" secondItem="gfb-CO-nmq" secondAttribute="bottom" id="uGY-8F-sRx"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>

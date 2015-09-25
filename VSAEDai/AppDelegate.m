@@ -10,6 +10,8 @@
 #import "VSALoginController.h"
 #import "VSAMainController.h"
 #import "WashController.h"
+#import "UMSocial.h"
+#import "UMSocialWechatHandler.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +21,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //集成友盟分享
+    [UMSocialData setAppKey:@"5603b796e0f55a2af0002cec"];
+    [UMSocialWechatHandler setWXAppId:@"wx8debc07849437d19" appSecret:@"87806abbde97339ce08b6c654b6538c7" url:@"http://www.umeng.com/social"];
     
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
@@ -32,6 +38,18 @@
     [[UINavigationBar appearance] setBarTintColor:VSAMainBlueColor];
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    return  [UMSocialSnsService handleOpenURL:url];
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return  [UMSocialSnsService handleOpenURL:url];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

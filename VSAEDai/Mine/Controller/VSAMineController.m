@@ -12,6 +12,7 @@
 #import "VSAAddressListController.h"
 #import "VSALoginController.h"
 #import "VSAShareView.h"
+#import "UMSocial.h"
 
 @interface VSAMineController () <UITableViewDataSource, UITableViewDelegate, VSAShareViewDelegate>
 @property (nonatomic, weak) NSArray *cellModels;
@@ -231,6 +232,30 @@
     [self.shareViewBtn removeFromSuperview];
     [UIView animateWithDuration:0.25 animations:^{
         self.mainView.transform = CGAffineTransformIdentity;
+    }];
+}
+
+/**
+ 分享给微信好友
+ */
+- (void)shareToSession {
+    //使用UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite分别代表微信好友、微信朋友圈、微信收藏
+    [[UMSocialDataService defaultDataService]  postSNSWithTypes:@[UMShareToWechatSession] content:@"e袋洗，分享来自友盟" image:nil location:nil urlResource:nil presentedController:self completion:^(UMSocialResponseEntity *response){
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            NSLog(@"分享成功！");
+        }
+    }];
+}
+
+/**
+ 分享到朋友圈
+ */
+- (void)shareToTimeline {
+    //使用UMShareToWechatSession,UMShareToWechatTimeline,UMShareToWechatFavorite分别代表微信好友、微信朋友圈、微信收藏
+    [[UMSocialDataService defaultDataService]  postSNSWithTypes:@[UMShareToWechatTimeline] content:@"e袋洗，分享来自友盟" image:nil location:nil urlResource:nil presentedController:self completion:^(UMSocialResponseEntity *response){
+        if (response.responseCode == UMSResponseCodeSuccess) {
+            NSLog(@"分享成功！");
+        }
     }];
 }
 
