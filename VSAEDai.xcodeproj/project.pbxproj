@@ -37,6 +37,12 @@
 		E1380B6D1BAC193300355860 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E1380B6C1BAC193300355860 /* TestModel.m */; settings = {ASSET_TAGS = (); }; };
 		E15927DB1BB03F06004D3147 /* VSAShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E15927DA1BB03F06004D3147 /* VSAShareView.xib */; settings = {ASSET_TAGS = (); }; };
 		E15927DE1BB03F21004D3147 /* VSAShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = E15927DD1BB03F21004D3147 /* VSAShareView.m */; settings = {ASSET_TAGS = (); }; };
+		E15C66371BB2D9740037ECEC /* VSACityListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E15C66361BB2D9740037ECEC /* VSACityListController.m */; settings = {ASSET_TAGS = (); }; };
+		E15C66391BB2DA680037ECEC /* citydict.plist in Resources */ = {isa = PBXBuildFile; fileRef = E15C66381BB2DA680037ECEC /* citydict.plist */; settings = {ASSET_TAGS = (); }; };
+		E15C663B1BB2E57D0037ECEC /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = E15C663A1BB2E57D0037ECEC /* cities.plist */; settings = {ASSET_TAGS = (); }; };
+		E15C66421BB2F1870037ECEC /* INTULocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E15C663E1BB2F1870037ECEC /* INTULocationManager.m */; settings = {ASSET_TAGS = (); }; };
+		E15C66431BB2F1870037ECEC /* INTULocationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E15C66401BB2F1870037ECEC /* INTULocationRequest.m */; settings = {ASSET_TAGS = (); }; };
+		E15C66461BB2F8410037ECEC /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E15C66451BB2F8410037ECEC /* MBProgressHUD.m */; settings = {ASSET_TAGS = (); }; };
 		E179F2841BAC2C8E005ED64E /* VSAEditLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E179F2831BAC2C8E005ED64E /* VSAEditLocationController.m */; settings = {ASSET_TAGS = (); }; };
 		E179F2891BAC305F005ED64E /* VSALocationListController.m in Sources */ = {isa = PBXBuildFile; fileRef = E179F2881BAC305F005ED64E /* VSALocationListController.m */; settings = {ASSET_TAGS = (); }; };
 		E1E4AA5A1BAA55B800924EE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1E4AA591BAA55B800924EE8 /* main.m */; };
@@ -121,6 +127,17 @@
 		E15927DA1BB03F06004D3147 /* VSAShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VSAShareView.xib; sourceTree = "<group>"; };
 		E15927DC1BB03F21004D3147 /* VSAShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAShareView.h; sourceTree = "<group>"; };
 		E15927DD1BB03F21004D3147 /* VSAShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAShareView.m; sourceTree = "<group>"; };
+		E15C66351BB2D9740037ECEC /* VSACityListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSACityListController.h; sourceTree = "<group>"; };
+		E15C66361BB2D9740037ECEC /* VSACityListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSACityListController.m; sourceTree = "<group>"; };
+		E15C66381BB2DA680037ECEC /* citydict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = citydict.plist; sourceTree = "<group>"; };
+		E15C663A1BB2E57D0037ECEC /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		E15C663D1BB2F1870037ECEC /* INTULocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationManager.h; sourceTree = "<group>"; };
+		E15C663E1BB2F1870037ECEC /* INTULocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationManager.m; sourceTree = "<group>"; };
+		E15C663F1BB2F1870037ECEC /* INTULocationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequest.h; sourceTree = "<group>"; };
+		E15C66401BB2F1870037ECEC /* INTULocationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INTULocationRequest.m; sourceTree = "<group>"; };
+		E15C66411BB2F1870037ECEC /* INTULocationRequestDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTULocationRequestDefines.h; sourceTree = "<group>"; };
+		E15C66441BB2F8410037ECEC /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E15C66451BB2F8410037ECEC /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		E179F2821BAC2C8E005ED64E /* VSAEditLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSAEditLocationController.h; sourceTree = "<group>"; };
 		E179F2831BAC2C8E005ED64E /* VSAEditLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VSAEditLocationController.m; sourceTree = "<group>"; };
 		E179F2871BAC305F005ED64E /* VSALocationListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VSALocationListController.h; sourceTree = "<group>"; };
@@ -280,6 +297,8 @@
 				E126C7751BAA75490078FD4A /* WashController.m */,
 				E126C77C1BAA9E410078FD4A /* WashOrderController.h */,
 				E126C77D1BAA9E410078FD4A /* WashOrderController.m */,
+				E15C66351BB2D9740037ECEC /* VSACityListController.h */,
+				E15C66361BB2D9740037ECEC /* VSACityListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -304,6 +323,9 @@
 		E1380B321BABE7E800355860 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				E15C66441BB2F8410037ECEC /* MBProgressHUD.h */,
+				E15C66451BB2F8410037ECEC /* MBProgressHUD.m */,
+				E15C663C1BB2F1870037ECEC /* Source */,
 				E1380B331BABE7F100355860 /* MJExtension */,
 			);
 			path = Lib;
@@ -348,6 +370,18 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		E15C663C1BB2F1870037ECEC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E15C663D1BB2F1870037ECEC /* INTULocationManager.h */,
+				E15C663E1BB2F1870037ECEC /* INTULocationManager.m */,
+				E15C663F1BB2F1870037ECEC /* INTULocationRequest.h */,
+				E15C66401BB2F1870037ECEC /* INTULocationRequest.m */,
+				E15C66411BB2F1870037ECEC /* INTULocationRequestDefines.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		E1E4AA4B1BAA55B800924EE8 = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +415,8 @@
 				E1E4AA611BAA55B900924EE8 /* Main.storyboard */,
 				E1E4AA641BAA55B900924EE8 /* Images.xcassets */,
 				E1E4AA661BAA55B900924EE8 /* LaunchScreen.xib */,
+				E15C663A1BB2E57D0037ECEC /* cities.plist */,
+				E15C66381BB2DA680037ECEC /* citydict.plist */,
 				E1E4AA571BAA55B800924EE8 /* Supporting Files */,
 			);
 			path = VSAEDai;
@@ -566,7 +602,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1E4AA631BAA55B900924EE8 /* Main.storyboard in Resources */,
+				E15C66391BB2DA680037ECEC /* citydict.plist in Resources */,
 				E15927DB1BB03F06004D3147 /* VSAShareView.xib in Resources */,
+				E15C663B1BB2E57D0037ECEC /* cities.plist in Resources */,
 				E1F195BE1BAD1BD300F071ED /* AboutMe.plist in Resources */,
 				E126C77B1BAA7E8D0078FD4A /* VSAWashCell.xib in Resources */,
 				E1E4AA681BAA55B900924EE8 /* LaunchScreen.xib in Resources */,
@@ -597,11 +635,14 @@
 				E126C7761BAA75490078FD4A /* WashController.m in Sources */,
 				E1380B4D1BABE7F100355860 /* MJFoundation.m in Sources */,
 				E179F2841BAC2C8E005ED64E /* VSAEditLocationController.m in Sources */,
+				E15C66461BB2F8410037ECEC /* MBProgressHUD.m in Sources */,
 				E126C77A1BAA7E8D0078FD4A /* VSAWashCell.m in Sources */,
+				E15C66431BB2F1870037ECEC /* INTULocationRequest.m in Sources */,
 				E1380B6A1BAC147B00355860 /* VSALocation.m in Sources */,
 				E126C76F1BAA6BF60078FD4A /* VSAMainTabBar.m in Sources */,
 				E1E4AA601BAA55B900924EE8 /* ViewController.m in Sources */,
 				E1E4AA5D1BAA55B800924EE8 /* AppDelegate.m in Sources */,
+				E15C66371BB2D9740037ECEC /* VSACityListController.m in Sources */,
 				E126C75F1BAA570B0078FD4A /* VSALoginController.m in Sources */,
 				E15927DE1BB03F21004D3147 /* VSAShareView.m in Sources */,
 				E126C7811BAAB68E0078FD4A /* VSANavigationController.m in Sources */,
@@ -613,6 +654,7 @@
 				E1380B2E1BABE4D600355860 /* UIBarButtonItem+Extension.m in Sources */,
 				E1380B591BABE9F700355860 /* VSALocationTool.m in Sources */,
 				E1380B541BABE7F100355860 /* NSObject+MJProperty.m in Sources */,
+				E15C66421BB2F1870037ECEC /* INTULocationManager.m in Sources */,
 				E1380B6D1BAC193300355860 /* TestModel.m in Sources */,
 				E1380B4E1BABE7F100355860 /* MJProperty.m in Sources */,
 				E1380B261BABDC1C00355860 /* VSAAddressListController.m in Sources */,

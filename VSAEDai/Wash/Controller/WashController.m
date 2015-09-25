@@ -10,6 +10,7 @@
 #import "VSAWashCell.h"
 #import "WashOrderController.h"
 #import "VSALocation.h"
+#import "VSACityListController.h"
 
 #define ImageCount 3
 int i = 0;
@@ -77,15 +78,19 @@ int i = 0;
 
 #pragma mark - 初始化
 - (void)setupNavigationBar {
+    //中间logo
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.image = [UIImage imageNamed:@"home_logo"];
     [imageView sizeToFit];
+    self.navigationItem.titleView = imageView;
     
-    //rightBarButtonItem - 服务范围
+    //leftBarButtonItem - 城市
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"服务范围" style:UIBarButtonItemStylePlain target:self action:@selector(serviceBtnClick)];
     self.navigationItem.rightBarButtonItem = rightItem;
-
-    self.navigationItem.titleView = imageView;
+    
+    //rightBarButtonItem - 服务范围
+    UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithTitle:@"城市" style:UIBarButtonItemStylePlain target:self action:@selector(locateBtnClick)];
+    self.navigationItem.leftBarButtonItem = leftItem;
 }
 
 - (void)setupMainScrollView {
@@ -141,6 +146,12 @@ int i = 0;
 }
 
 #pragma mark - 监听事件
+- (void)locateBtnClick {
+    //弹出 选择城市view
+    VSACityListController *cityListVC = [[VSACityListController alloc] init];
+    [self presentViewController:cityListVC animated:YES completion:nil];
+}
+
 - (void)serviceBtnClick {
     UIViewController *serviceVC = [[UIViewController alloc] init];
     serviceVC.view.backgroundColor = VSAMainBackgroundColor;
